@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/superbeautiful-accordion-gallery",
+  "version": "0.1.0",
+  "title": "Accordion Gallery",
+  "keywords": [
+    "gallery",
+    "image",
+    "photo"
+  ],
+  "category": "media",
+  "icon": "gallery",
+  "description": "Insert images to display them in an accordion style gallery.",
+  "attributes": {
+    "height": {
+      "type": "string",
+      "default": "300px"
+    }
+  },
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "core/image",
+        "attributes": {
+          "url": "https://s.w.org/images/core/5.3/Glacial_lakes%2C_Bhutan.jpg"
+        }
+      },
+      {
+        "name": "core/image",
+        "attributes": {
+          "url": "https://s.w.org/images/core/5.3/Sediment_off_the_Yucatan_Peninsula.jpg"
+        }
+      },
+      {
+        "name": "core/image",
+        "attributes": {
+          "url": "https://s.w.org/images/core/5.3/Glacial_lakes%2C_Bhutan.jpg"
+        }
+      },
+      {
+        "name": "core/image",
+        "attributes": {
+          "url": "https://s.w.org/images/core/5.3/Sediment_off_the_Yucatan_Peninsula.jpg"
+        }
+      }
+    ]
+  },
+  "supports": {
+    "html": false,
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true
+      }
+    },
+    "dimensions": {
+      "height": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "allowedBlocks": [
+    "core/image"
+  ],
+  "textdomain": "superbeautiful-accordion-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

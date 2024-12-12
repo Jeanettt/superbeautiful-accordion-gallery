@@ -1,0 +1,39 @@
+.wp-block-create-block-superbeautiful-accordion-gallery {
+	width: 100%;
+	max-width: 100% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	figure {
+		position: relative;
+		height: 100%;
+		flex: 0.8;
+		transition: flex 0.5s ease-in;
+		cursor: pointer;
+		margin-bottom: 0 !important;
+
+		&:not(:first-of-type) {
+			margin-left: -40px;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+			object-fit: cover;
+			border-top-left-radius: 40px;
+		}
+
+		&.active {
+			flex: 2;
+		}
+	}
+	@media screen and (max-width: 782px) {
+		figure {
+			flex: 0.5;
+		}
+	}
+}

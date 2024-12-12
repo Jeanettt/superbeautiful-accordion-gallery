@@ -1,6 +1,6 @@
 === Superbeautiful Accordion Gallery ===
 Contributors:      Studio Mui
-Plugin URI: 	   https://studiomui.nl
+Plugin URI: 	   	 https://github.com/Jeanettt/superbeautiful-accordion-gallery
 Tags:              block
 Tested up to:      6.6
 Stable tag:        0.1.0
